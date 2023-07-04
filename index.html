@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>f2-june-contast</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Management CRUD</h1>
+      <form onsubmit="event.preventDefault();onformSubmit()">
+        <div class="input-container">
+          <div class="container-data">
+              <input type="text" class="in-btn" id="btn-name" name="name" placeholder="Name" />
+              <input type="text" class="in-btn" id="btn-name1" name="email" placeholder="Email" />
+              <input type="text" class="in-btn" id="btn-name2" name="gpa" placeholder="GPA" />
+            </div>
+            <div class="data-input">
+              <input type="text" class="in-btn" id="btn-name3" name="age" placeholder="Age" />
+              <input type="text" class="in-btn" id="btn-name4" name="degree" placeholder="Degree" />
+            </div>
+            <input type="submit" value="Add Student" class="btn">
+        </div> 
+      </form>
+      <input type="text" placeholder="Search By Name Email or degree" id="search-btn" >
+
+       <section>
+        <table id="table-data">
+          <thead>
+              <tr>
+                  <th>ID</th>
+                  <th>Student Name</th>
+                  <th>Email</th>
+                  <th>Age</th>
+                  <th>GPA</th>
+                  <th>Degree</th>
+              </tr>
+          </thead>
+          <tbody class="tbody-data" id="tbody-data">
+                
+          </tbody>
+      </table>
+       </section>
+        
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
